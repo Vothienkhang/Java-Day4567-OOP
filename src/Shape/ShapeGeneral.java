@@ -1,9 +1,9 @@
-// classDiagram
-//class Shape {
+package Shape;// classDiagram
+//class Shape.Shape {
 //  - color : String
 //  - filled : boolean
-//  + Shape()
-//  + Shape(color:String, filled:boolean)
+//  + Shape.Shape()
+//  + Shape.Shape(color:String, filled:boolean)
 //  + getColor() : String
 //  + setColor(color:String) : void
 //  + isFilled() : boolean
@@ -25,7 +25,7 @@
 //  + toString() : String
 //}
 //
-//Triangle --|> Shape : extends
+//Triangle --|> Shape.Shape : extends
 
 public class ShapeGeneral {
     private String color = "green";
@@ -57,6 +57,6 @@ public class ShapeGeneral {
 
     @Override
     public String toString() {
-        return "ShapeGeneral{" + "color=" + color + ", filled=" + filled + '}';
+        return "Shape.ShapeGeneral{" + "color=" + color + ", filled=" + filled + '}';
     }
 }

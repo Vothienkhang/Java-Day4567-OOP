@@ -1,3 +1,5 @@
+package Shape;
+
 public class Main_RectangleTest {
     public static void main(String[] args) {
 

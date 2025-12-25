@@ -1,4 +1,4 @@
-// ┌──────────────────────────┐
+package Shape;// ┌──────────────────────────┐
 //│          Circle          │
 //├──────────────────────────┤
 //│ - radius: double         │
@@ -77,6 +77,6 @@ public class CircleGeneral {
 
     @Override
     public String toString() {
-        return "CircleGeneral{" + "radius=" + radius + ", color=" + color + ", area=" + getArea() + '}';
+        return "Shape.CircleGeneral{" + "radius=" + radius + ", color=" + color + ", area=" + getArea() + '}';
     }
 }

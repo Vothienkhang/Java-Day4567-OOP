@@ -1,4 +1,4 @@
-import java.awt.*;
+package Shape;
 
 public class CircleTest extends Shape {
     private double radius = 1.0;
@@ -30,6 +30,6 @@ public class CircleTest extends Shape {
 
     @Override
     public String toString() {
-        return "A CircleTest with{" + "radius=" + getRadius() + ",which is a subclass of" + super.toString() + '}';
+        return "A Shape.CircleTest with{" + "radius=" + getRadius() + ",which is a subclass of" + super.toString() + '}';
     }
 }

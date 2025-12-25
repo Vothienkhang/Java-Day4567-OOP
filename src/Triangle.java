@@ -1,3 +1,5 @@
+import Shape.Shape;
+
 public class Triangle extends Shape {
     private double side1 = 1.0;
     private double side2 = 1.0;
