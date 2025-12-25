@@ -1,8 +1,4 @@
-package Day7.Abstract.Interface;
-
-import Day7.Abstract.Interface.Animal;
-import Day7.Abstract.Interface.Tiger;
-import Day7.Abstract.Interface.Chicken;
+package Animal;
 
 public class AbstractInterface {
     public static void main(String[] args) {

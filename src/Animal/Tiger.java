@@ -1,4 +1,4 @@
-package Day7.Abstract.Interface;
+package Animal;
 
 public class Tiger extends Animal {
     @Override

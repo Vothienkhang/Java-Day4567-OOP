@@ -4,9 +4,13 @@ import java.awt.*;
 
 public class Rectangle {
 
-        // Khai báo các thuộc tính (properties), định nghĩa các phương thức khởi tạo (contructor)
-        double width, height;
-        public Rectangle() {}; // Hàm khởi tạo
+    // Khai báo các thuộc tính (properties), định nghĩa các phương thức khởi tạo (contructor)
+    double width, height;
+
+    public Rectangle() {
+    }
+
+    ; // Hàm khởi tạo
 
     public Rectangle(double width, double height) {
         this.width = width;
