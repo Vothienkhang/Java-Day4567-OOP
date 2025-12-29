@@ -1,4 +1,5 @@
-package Flyable;
+package Duck;
 
-public class Swimable {
+public interface Swimable {
+    void swim();
 }
