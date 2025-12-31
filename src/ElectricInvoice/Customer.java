@@ -60,7 +60,7 @@ public class Customer {
     public String toString() {
         return "Customer " +
                 "ownerName = " + ownerName + '\'' + ", houseNumber='" + houseNumber + '\'' +
-                ", electricityMeterId='" + electricityMeterId + '\'' +
+                ", electricityMeterId='" + electricityMeterID + '\'' +
                 '}';
     }
 }

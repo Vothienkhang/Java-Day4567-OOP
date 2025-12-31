@@ -36,7 +36,37 @@ public class InvoiceManager {
     }
 
     // Remove invoice by meter ID
+    public boolean removeByMeterID(String meterID) {
+        ElectricityInvoice invoice = searchByMeterID(meterID);
+        if (invoice != null) {
+            invoices.remove(invoice);
+            return true;
+        } else  {
+            return false;
+        }
+    }
 
+    // Update invoice by meter ID
+    public boolean updateByMeterID(String meterID, String newOwnerName, String newHouseNumber, int newPreviousReading, int newCurrentReading) {
+        ElectricityInvoice invoice = searchByMeterID(meterID);
+        if (invoice != null) {
+            Customer updateCustomer = new Customer(newOwnerName, newHouseNumber, meterID);
+            invoice.setCustomer(updateCustomer);
+            invoice.setPreviousReading(newPreviousReading);
+            invoice.setCurrentReading(newCurrentReading);
+            return true;
+        } else   {
+            return false;
+        }
+    }
 
-
+    public void printAll() {
+        if (invoices.isEmpty()) {
+            System.out.println("No invoices found");
+            return;
+        }
+        for (ElectricityInvoice invoice : invoices) {
+            System.out.println(invoice);
+        }
+    }
 }
